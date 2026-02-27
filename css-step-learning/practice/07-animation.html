@@ -1,13 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <title>Step07 Animation</title>
     <style>
-      .mask { position: fixed; inset: 0; background: rgba(0,0,0,.35); animation: fade .2s ease; }
-      .modal { width: 280px; margin: 100px auto; padding: 16px; background: #fff; border-radius: 8px; animation: slide .25s ease; }
-      @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
-      @keyframes slide { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+      .mask {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.1);
+        animation: fade 0.2s ease;
+      }
+      .modal {
+        width: 280px;
+        margin: 100px auto;
+        padding: 16px;
+        background: #fff;
+        border-radius: 8px;
+        animation: slide 0.25s ease;
+      }
+      @keyframes fade {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes slide {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     </style>
   </head>
   <body>

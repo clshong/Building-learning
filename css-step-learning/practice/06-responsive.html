@@ -1,20 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <title>Step06 Responsive</title>
     <style>
-      h1 { font-size: clamp(20px, 4vw, 40px); }
-      .list { display: grid; grid-template-columns: 1fr; gap: 8px; }
-      .item { height: 60px; background: #eee; }
-      @media (min-width: 768px) { .list { grid-template-columns: repeat(2, 1fr); } }
-      @media (min-width: 1200px) { .list { grid-template-columns: repeat(4, 1fr); } }
+      h1 {
+        font-size: clamp(20px, 4vw, 40px);
+      }
+      .list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+      .item {
+        height: 60px;
+        background: #eee;
+      }
+      @media (min-width: 768px) {
+        .list {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (min-width: 1200px) {
+        .list {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
     </style>
   </head>
   <body>
     <h1>Responsive Title</h1>
     <div class="list">
-      <div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
     </div>
   </body>
 </html>

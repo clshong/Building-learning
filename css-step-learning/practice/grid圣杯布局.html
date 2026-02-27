@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gird Layout</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+      }
+      .page-container {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 50px 1fr 50px;
+      }
+
+      .header {
+        line-height: 50px;
+        background-color: #ccc;
+        text-align: center;
+      }
+
+      .footer {
+        line-height: 50px;
+        background-color: #ccc;
+        text-align: center;
+      }
+
+      .main-content {
+        display: grid;
+        grid-template-columns: 100px 1fr 100px;
+      }
+
+      .left,
+      .right {
+        background-color: red;
+      }
+      .content {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="header">头部</div>
+
+      <div class="main-content">
+        <div class="left"></div>
+        <div class="content">内容区域</div>
+        <div class="right"></div>
+      </div>
+
+      <div class="footer">页脚</div>
+    </div>
+  </body>
+</html>
