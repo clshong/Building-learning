@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BFC</title>
+    <style>
+      .parent {
+        border: 3px solid red;
+        margin-bottom: 20px;
+        overflow: auto;
+      }
+      .child {
+        float: left;
+        width: 200px;
+        height: 150px;
+        background-color: lightblue;
+        line-height: 150px;
+        text-align: center;
+      }
+      p {
+        background-color: yellow;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">我是一个浮动的子元素</div>
+    </div>
+    <p>我是父元素下方的段落，我会跑上去。</p>
+  </body>
+</html>
