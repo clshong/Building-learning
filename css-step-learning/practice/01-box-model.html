@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Step01 Box Model</title>
+    <style>
+      .wrap { display: flex; gap: 16px; }
+      .a, .b { width: 200px; padding: 20px; border: 10px solid #222; background: #eee; }
+      .a { box-sizing: content-box; }
+      .b { box-sizing: border-box; }
+    </style>
+  </head>
+  <body>
+    <h3>观察两块元素占位差异</h3>
+    <div class="wrap">
+      <div class="a">content-box</div>
+      <div class="b">border-box</div>
+    </div>
+  </body>
+</html>
